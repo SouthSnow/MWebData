@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html" charset="utf-8">
+	<title>样式</title>
+	<style type="text/css">
+		body {
+			color: red;
+		}
+		a {
+			color: green;
+		}
+	</style>
+	<script type="text/javascript">
+	function changeLink() {
+		// var myAnchor = document.getElementById('myAnchor');
+		var myAnchor = document.getElementsByClassName('btn active')[0];
+		myAnchor.href = 'http://www.baidu.com';
+		myAnchor.innerHTML = 'baidu';
+		myAnchor.target = '_blank';
+
+	}
+	</script>
+</head>
+<body onload="changeLink()" class="body-layer invertList-layer" style="background-color:#FFFF66">
+	<header class="body-header" style="display: none">
+	动态消息
+	</header>
+	<bodyer class="body-bodyer" style="margin-top:0.6rem;">
+		<section class="promotionManage-top" style="padding: 2rem 0 0rem;">
+			<input type="hidden" id="CURROL" value="1">
+			<div class="body-panel-img-box">
+				<div class="btn-group">
+					<a onclick="changeLink()" id="myAnchor" class="btn active" href="/distribution?action=msgList&amp;ntype=2">账号动态</a>
+					<a href="/distribution?action=msgList&amp;ntype=1">系统消息</a>
+					<input id="ntype" type="hidden" onclick="changeLink()" value="1">
+				</div>
+			</div>
+		</section>
+	</bodyer>
+</body>
+</html>

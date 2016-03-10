@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>confirm</title>
+	<link rel="stylesheet" href="test.css" />
+	<script type="text/javascript">
+	function rec() {
+		var mymessage = confirm("你是妹纸吗?");// 弹框提示框
+		if(mymessage == true) {
+			document.write("我是妹纸");
+		}
+		else {
+			document.write("我是屌丝");
+		}
+	}
+
+	function rec1 () {
+		var score = prompt("请输入你的成绩:");// 弹框输入框
+		if (score >= 90) {
+			document.write("你很棒!");
+		} else if (score >= 75) {
+			document.write("你很优秀!");
+		} else if (score >= 60) {
+			document.write("你要加油!");
+		} else{
+			document.write("你要努力!");
+		};
+	}
+	function wopen () {
+		window.open("http://www.imooc.com","_blank","top = 100px,left = 0px,width = 800px,height = 600px, menubar = yes, toolbar = yes, status = no, scrollbars = yes");
+	}
+
+	function openWindow () {
+		var mymessage = confirm("是否要打开?");
+		if (mymessage == true) {
+			var mycite = prompt("请输入网址:");
+			if (mycite == "http://www.imooc.com") {
+				window.open(mycite, "_blank", "top = 100px, left = 100px, width = 1000px, height = 800px, menubar = no, toolbar = no, status = no, scrollbars = yes");
+			} else{
+				wopen();
+			};
+		} else{};
+	}
+
+	
+
+	</script>
+</head>
+<body>
+	<input name="button" type="button" onclick="openWindow()" value="点击我,弹出对话框" />
+
+	<h2 id="con">I love JaveScript</h2>
+	<p class="p">JavaScript使网页显示动态效果并实现与用户交互功能.</p>
+	<p class="p" id="p1">JavaScript使网页显示动态效果并实现与用户交互功能</p>
+	<div class="p">
+		<p>好好学习js</p>
+	</div>
+	<script type="text/javascript">
+		var mychar = document.getElementById("con");
+		mychar.style.color = "red";
+		mychar.style.backgroundColor = "#ccc";
+		mychar.style.width = 300px;
+
+		var p1 = document.getElementById("p1");
+		p1.style.color = "red";
+		p1.style.backgroundColor = "red";
+	</script>
+
+</body>
+</html>
