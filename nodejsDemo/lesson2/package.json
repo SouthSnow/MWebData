@@ -1,0 +1,22 @@
+{
+  "name": "pfl",
+  "version": "1.0.0",
+  "description": "hao",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "re"
+  },
+  "keywords": [
+    "123456"
+  ],
+  "author": "pflnh",
+  "license": "pfl",
+  "dependencies": {
+    "express": "^4.13.3",
+    "utility": "^1.5.0"
+  }
+}

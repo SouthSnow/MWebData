@@ -1,0 +1,23 @@
+{
+  "name": "lesson3",
+  "version": "1.0.0",
+  "description": "pachong",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "pfl"
+  },
+  "keywords": [
+    "123456"
+  ],
+  "author": "pfl",
+  "license": "pfl",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "express": "^4.13.3",
+    "superagent": "^1.4.0"
+  }
+}
